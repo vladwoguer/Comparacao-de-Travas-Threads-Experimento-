@@ -39,7 +39,7 @@ public class Main {
 			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
 			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
 			executa(tamArray, nThreads, Trava.PADARIA);
-/*
+
 			tamArray = 8;
 			nThreads = 8;
 
@@ -111,7 +111,7 @@ public class Main {
 			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
 			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
 			executa(tamArray, nThreads, Trava.PADARIA);
-*/
+
 		}
 		
 		
