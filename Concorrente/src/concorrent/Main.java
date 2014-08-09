@@ -19,7 +19,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 10; i++) {
 
 			File file = new File("saida" + numero + ".txt");
 			try {
@@ -40,77 +40,77 @@ public class Main {
 			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
 			executa(tamArray, nThreads, Trava.PADARIA);
 
-//			tamArray = 8;
-//			nThreads = 8;
-//
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.PADARIA);
-//
-//			tamArray = 16;
-//			nThreads = 8;
-//
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.PADARIA);
-//
-//			tamArray = 4;
-//			nThreads = 4;
-//
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.PADARIA);
-//
-//			tamArray = 8;
-//			nThreads = 4;
-//
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.PADARIA);
-//
-//			tamArray = 16;
-//			nThreads = 4;
-//
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.PADARIA);
-//
-//			tamArray = 4;
-//			nThreads = 2;
-//
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.PADARIA);
-//
-//			tamArray = 8;
-//			nThreads = 2;
-//
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.PADARIA);
-//
-//			tamArray = 16;
-//			nThreads = 2;
-//
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
-//			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
-//			executa(tamArray, nThreads, Trava.PADARIA);
+			tamArray = 8;
+			nThreads = 8;
+
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.PADARIA);
+
+			tamArray = 16;
+			nThreads = 8;
+
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.PADARIA);
+
+			tamArray = 4;
+			nThreads = 4;
+
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.PADARIA);
+
+			tamArray = 8;
+			nThreads = 4;
+
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.PADARIA);
+
+			tamArray = 16;
+			nThreads = 4;
+
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.PADARIA);
+
+			tamArray = 4;
+			nThreads = 2;
+
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.PADARIA);
+
+			tamArray = 8;
+			nThreads = 2;
+
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.PADARIA);
+
+			tamArray = 16;
+			nThreads = 2;
+
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_INJUSTO);
+			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
+			executa(tamArray, nThreads, Trava.PADARIA);
 
 		}
 		
