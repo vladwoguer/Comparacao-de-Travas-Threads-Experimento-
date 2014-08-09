@@ -15,7 +15,6 @@ public class BakeryLock {
 	}
 
 	public void lock(int id) {
-		System.out.println(id);
 		// Porta de acesso...
 		num[id] = tickets.getAndIncrement();
 
