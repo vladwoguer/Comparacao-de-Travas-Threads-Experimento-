@@ -13,15 +13,13 @@ public class Main {
 
 	static CyclicBarrier cb;
 	static CyclicBarrier cbTime;
-	static int numero = 1;
 	static FileWriter fw;
 	static long antes;
 
 	public static void main(String[] args) {
 
 		for (int i = 0; i < 10; i++) {
-
-			File file = new File("saida" + numero + ".txt");
+			File file = new File("saida" + i + ".txt");
 			try {
 				fw = new FileWriter(file);
 
@@ -112,7 +110,7 @@ public class Main {
 			executa(tamArray, nThreads, Trava.SPIN_REENTRANTLOCK_JUSTO);
 			executa(tamArray, nThreads, Trava.PADARIA);
 
-		}
+		
 		
 		
 		try {
@@ -120,7 +118,7 @@ public class Main {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		}
 	}
 
 	private static void executa(int tamArray, int nThreads, Trava trava) {
