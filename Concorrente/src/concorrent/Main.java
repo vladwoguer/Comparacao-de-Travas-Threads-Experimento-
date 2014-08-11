@@ -141,7 +141,7 @@ public class Main {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		// imprimeArrayFinal(Alterador.getArray());
+		 imprimeArrayFinal(Alterador.getArray());
 	}
 
 	private static void imprimeArrayFinal(int[] array) {

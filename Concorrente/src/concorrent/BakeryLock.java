@@ -21,7 +21,7 @@ public class BakeryLock {
 		// Porta de acesso...
 		numeros.set(id, tickets.getAndIncrement());
 		// Espere a sua vez...
-		for (int j = 0; j < nThreads-1; j++) {
+		for (int j = 0; j < nThreads; j++) {
 			while ((numeros.get(j) != 0) && ((numeros.get(j) < numeros.get(id))))
 				;
 		}
