@@ -5,7 +5,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Alterador extends Thread {
-	private static final int NUM_DE_ALTERACOES = 100000;
+	private static final int NUM_DE_ALTERACOES = 9500;
 	private static int[] arrayInt;
 	private static LockAdapter[] lockArray;
 	private int id;

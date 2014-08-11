@@ -1,6 +1,7 @@
 package concorrent;
 
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicIntegerArray;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class BakeryLock {
@@ -8,24 +9,25 @@ public class BakeryLock {
 	static int nThreads;
 
 	private static AtomicInteger tickets = new AtomicInteger(0);
-	private int[] num;
+	private AtomicIntegerArray numeros;
 
 	public BakeryLock() {
-		num = new int[nThreads];
+		numeros=new AtomicIntegerArray(nThreads);
+		for(int i=0; i<nThreads;i++)
+			numeros.set(i,0);
 	}
 
 	public void lock(int id) {
 		// Porta de acesso...
-		num[id] = tickets.getAndIncrement();
-
+		numeros.set(id, tickets.getAndIncrement());
 		// Espere a sua vez...
-		for (int j = 0; j < nThreads; j++) {
-			while ((num[j] != 0) && ((num[j] < num[id])))
+		for (int j = 0; j < nThreads-1; j++) {
+			while ((numeros.get(j) != 0) && ((numeros.get(j) < numeros.get(id))))
 				;
 		}
 	}
 
 	public void unlock(int id) {
-		num[id] = 0;
+		numeros.set(id, 0);
 	}
 }
